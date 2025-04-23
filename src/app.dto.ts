@@ -1,0 +1,29 @@
+import { IsString, IsNumber, IsNotEmpty } from 'class-validator';
+
+export class InfoUserDto {
+  @IsString()
+  @IsNotEmpty()
+  readonly name: string;
+
+  @IsString()
+  @IsNotEmpty()
+  readonly age: number;
+
+  @IsString()
+  @IsNotEmpty()
+  readonly region: string;
+
+  @IsString()
+  @IsNotEmpty()
+  readonly number: string;
+}
+
+export class ResultInfoUserDto {
+  @IsString()
+  @IsNotEmpty()
+  readonly userInfo: string;
+
+  @IsString()
+  @IsNotEmpty()
+  readonly phone: string;
+}
