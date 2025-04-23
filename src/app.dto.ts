@@ -5,7 +5,7 @@ export class InfoUserDto {
   @IsNotEmpty()
   readonly name: string;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   readonly age: number;
 
